@@ -1,0 +1,30 @@
+/* Typography & layout */
+html, body { margin:0; padding:0; }
+body {
+  font-family: Georgia, serif;
+  color:#222; background:#fff;
+  max-width:800px; margin:64px auto; line-height:1.6; padding:0 18px;
+}
+
+/* Nav */
+nav { margin-bottom:28px; }
+nav a { margin-right:16px; text-decoration:none; color:#003366; font-weight:600; }
+nav .brand { margin-right:24px; }
+nav a.active, nav a:hover { text-decoration:underline; }
+
+/* Content */
+h1 { color:#003366; margin:0 0 12px 0; }
+h2 { margin:24px 0 6px; }
+.paper { margin:22px 0; }
+.meta { color:#555; font-style:italic; margin:4px 0 8px; }
+.links a { margin-right:12px; }
+
+.button {
+  display:inline-block; padding:8px 14px; border:1px solid #003366;
+  border-radius:4px; text-decoration:none; color:#003366;
+}
+.button:hover { background:#f2f6ff; }
+.note { color:#666; }
+
+/* Footer */
+footer { margin-top:40px; color:#666; font-size:0.95em; }
