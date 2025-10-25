@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <title>Research — Tommaso De Santo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Simple, consistent styling to match the rest of the site */
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+           margin: 0; padding: 0; line-height: 1.5; color: #222; background: #fff; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 24px 16px 48px; }
+    header { margin-bottom: 20px; }
+    nav a { margin-right: 12px; text-decoration: none; color: #0366d6; }
+    nav a.active { font-weight: 600; }
+    h1 { font-size: 1.75rem; margin: 0.2rem 0 1.2rem; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 18px 0 24px; }
+
+    /* Research list */
+    ul.research-list { list-style: disc; margin-left: 1.25rem; padding-left: 0.25rem; }
+    li.research-item { margin-bottom: 1.1rem; }
+    .title { font-weight: 600; }
+    .coauthors { font-style: italic; }
+    .links a { text-decoration: none; color: #0366d6; }
+    details { margin: 0.35rem 0 0.75rem; }
+    summary { cursor: pointer; font-weight: 600; }
+    p { margin: 0.25rem 0 0.75rem; }
+    footer { margin-top: 40px; font-size: 0.9rem; color: #666; }
+    code { background: #f6f8fa; padding: 0 4px; border-radius: 3px; }
+  </style>
 </head>
 <body>
-  <nav>
-    <a class="brand" href="index.html">TDS</a>
-    <a class="active" href="research.html">Research</a>
-    <a href="cv.html">CV</a>
-    <a href="other.html">Other</a>
-  </nav>
-  <main>
-    <h1>Research</h1>
+  <div class="wrap">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="other.html">Other</a>
+      </nav>
+      <h1>Research</h1>
+      <hr>
+    </header>
 
-    <section class="paper">
-      <h2>Working Paper Title</h2>
-      <p class="meta">with Coauthors (Year)</p>
-      <p class="abs">3–5 sentence abstract: question, mechanism, data/methods, key quantitative result.</p>
-      <p class="links">
-        <a href="papers/working_paper.pdf">PDF</a>
-        <a href="slides/working_paper_slides.pdf">Slides</a>
-        <a href="code/">Code</a>
+    <main>
+      <ul class="research-list">
+
+        <!-- 1) Fertility, Housing, and Location Decisions -->
+        <li class="research-item">
+          <span class="title">Fertility, Housing, and Location Decisions</span>
+          <span class="coauthors"></span>
+          <span class="links"> — <a href="assets/slides/Fertility_Housing_Location.pdf">Slides (coming soon)</a></span>
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              I study the joint decision of fertility and location choice, focusing on housing demand and tenure adjustments.
+              Using PSID and ACS data, I document that new parents often move for housing expansion, accepting real income losses
+              while relocating towards cheaper, lower-wage areas. I complement this with the well-established fact that tenure
+              status (owning versus renting) affects fertility and location decisions.
+            </p>
+            <p>
+              To rationalize these facts, I develop a quantitative spatial equilibrium model of fertility and location decisions
+              with tenure choice. In the model, having children increases housing requirements, intensifying the trade-off households
+              face between housing affordability and local wages or amenities. This interaction drives spatial sorting fertility patterns.
+            </p>
+          </details>
+        </li>
+
+        <!-- 2) Consumption Sorting and Inequality -->
+        <li class="research-item">
+          <span class="title">Consumption Sorting and Inequality</span>
+          <span class="coauthors"> (with Saverio Spinella)</span>
+          <span class="links"> — <a href="assets/slides/Consumption_Sorting_Inequality.pdf">Slides (coming soon)</a></span>
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Recent empirical evidence shows substantial consumption segregation across the United States and that consumption
+              baskets differ markedly across the income distribution. We explain these empirical patterns using a spatial model
+              of product-market search with non-homothetic preferences and endogenous firm and household location.
+            </p>
+            <p>
+              The calibrated model replicates observed empirical regularities. We study the introduction of publicly-owned
+              grocery stores aimed at decreasing non-durable good prices and find that congestion forces prevent the policy
+              from reaching its intended goals. This work highlights how the interaction between shopping behavior, consumption
+              segregation externalities, and housing-market congestion shapes urban consumption inequality.
+            </p>
+          </details>
+        </li>
+
+        <!-- 3) Frictional Rental Markets and Inequality -->
+        <li class="research-item">
+          <span class="title">Frictional Rental Markets and Inequality</span>
+          <span class="coauthors"></span>
+          <span class="links"> — <a href="assets/slides/Frictional_Rental_Markets.pdf">Slides (coming soon)</a></span>
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Using ACS microdata, I document new facts on the heterogeneity of paid rents across individuals and cities.
+              First, young people tend to pay higher rents and move more frequently, especially in denser and less housing-elastic
+              cities. Second, recent movers—both within and across cities—pay systematically higher rents. These effects are
+              heterogeneous across space and stronger in larger, denser metropolitan areas.
+            </p>
+            <p>
+              To rationalize these patterns, I develop a parsimonious model of directed search in the rental market. The model
+              explains the observed dispersion in paid rents and implies that increases in housing supply would disproportionately
+              benefit younger and more mobile households.
+            </p>
+          </details>
+        </li>
+
+      </ul>
+
+      <hr>
+      <p>
+        <strong>Slides:</strong> upload your files to <code>assets/slides/</code> and keep the same filenames:
+        <code>Fertility_Housing_Location.pdf</code>, <code>Consumption_Sorting_Inequality.pdf</code>, and
+        <code>Frictional_Rental_Markets.pdf</code>. Update the links above if you choose different names.
       </p>
-    </section>
+    </main>
 
-    <section class="paper">
-      <h2>Second Project</h2>
-      <p class="meta">Solo (Year)</p>
-      <p class="abs">Short description; add links when ready.</p>
-    </section>
-  </main>
-  <footer>© <span id="y"></span> Tommaso De Santo</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Tommaso De Santo
+    </footer>
+  </div>
 </body>
 </html>
